@@ -1,0 +1,48 @@
+{
+  "name": "faker-as-a-service",
+  "version": "1.0.0",
+  "description": "Service to generate Fake yet realistic data for Testing/Development",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch --ignore '*.test.js' src --exec \"npm start\"",
+    "start": "functions-framework --target=faas",
+    "test": "jest",
+    "lint-fix": "eslint --fix",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoooooo/faker-as-a-service.git"
+  },
+  "keywords": [
+    "faker",
+    "service",
+    "fake",
+    "data",
+    "testing",
+    "development",
+    "test"
+  ],
+  "author": "abidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/octoooooo/faker-as-a-service/issues"
+  },
+  "homepage": "https://github.com/octoooooo/faker-as-a-service#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "@google-cloud/functions-framework": "^3.1.1",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.1",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "joi": "^17.6.0"
+  }
+}
