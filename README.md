@@ -1,2 +1,3 @@
-# fake-user-service
-Service to generate Fake Users for my Projects
+# Faker as a Service
+
+Service to generate Fake yet realistic data for Testing/Development
